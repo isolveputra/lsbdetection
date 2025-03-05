@@ -1,5 +1,12 @@
 import cv2
 import streamlit as st
+
+try:
+    import cv2
+    st.write("OpenCV berhasil diimpor! 🎉")
+except ModuleNotFoundError:
+    st.error("OpenCV (`cv2`) tidak ditemukan. Coba instal dengan `pip install opencv-python-headless`")
+
 import numpy as np
 from PIL import Image
 
