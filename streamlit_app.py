@@ -1,6 +1,6 @@
+import cv2
 import streamlit as st
 import numpy as np
-import cv2
 from PIL import Image
 
 def extract_lsb(image):
